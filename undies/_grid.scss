@@ -1,0 +1,35 @@
+// ::::::::::::::::::::::::::::::::::::::::::
+// ::::::::::::::::::::::::::::::::::::::::::
+// ------------------------------------------
+// GRID: A very simple 12-column grid
+// ------------------------------------------
+// ::::::::::::::::::::::::::::::::::::::::::
+// ::::::::::::::::::::::::::::::::::::::::::
+
+$gutter-width: 20px;
+$col-width: 100%;
+.row {
+  display: block;
+  margin-right: -$gutter-width;
+  margin-left: -$gutter-width;
+  padding: 0;
+  position: relative;
+  @extend .clearfix;
+  .column {
+    float: left;
+    width: 100%;
+    position: relative;
+    width: $col-width;    
+    padding: 0 $gutter-width;
+    @for $i from 1 through 12 {     
+      &.col-#{$i} { 
+        width: 100% / 12 * $i;
+      }
+    }   
+    &.col-centered {
+      display: table;
+      float: none;
+      margin: auto;
+    }
+  }
+}

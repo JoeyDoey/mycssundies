@@ -1,0 +1,52 @@
+// ::::::::::::::::::::::::::::::::::::::::::
+// ::::::::::::::::::::::::::::::::::::::::::
+// ------------------------------------------
+// MIXINS
+// ------------------------------------------
+// ::::::::::::::::::::::::::::::::::::::::::
+// ::::::::::::::::::::::::::::::::::::::::::
+
+
+// Selection defaults
+// ---------------------------------------
+@mixin selection($selection-bg: #111, $selection-color: #fff) {
+  background: $selection-bg;
+  color: $selection-color;
+}
+
+// Clearfix
+// ---------------------------------------
+@mixin clearfix() {
+  zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// unstyled list items
+// ---------------------------------------
+@mixin clean-list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
+}
+
+// Hidden + invisible elements
+// ---------------------------------------
+@mixin no-show(){
+  display: none;
+  visibility: hidden;
+}
+
+// TYPOGRAPHIC STRUCTURE (columns, etc)
+// ---------------------------------------
+@mixin columnize($column-count: 2, $column-rule: 'none', $column-gap: 30px, $column-rule-color: ''none) {
+  @include columns($column-count $column-gap);
+  @include column-rule($column-rule);
+  @include column-rule-color($column-rule-color);
+}

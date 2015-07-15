@@ -1,0 +1,48 @@
+// ::::::::::::::::::::::::::::::::::::::::::
+// ::::::::::::::::::::::::::::::::::::::::::
+// ------------------------------------------
+// HELPER CLASSES
+// ------------------------------------------
+// ::::::::::::::::::::::::::::::::::::::::::
+// ::::::::::::::::::::::::::::::::::::::::::
+.highlight-color {
+  color: $highlight-color;
+}
+.highlight-bg {
+  background-color: $highlight-color;
+}
+.float-left {
+  float: left; 
+}
+.float-right {
+  float: right; 
+}
+.uppercase, 
+.cap {
+  text-transform: uppercase;
+}
+.lowercase {
+ text-transform: lowercase; 
+}
+.hidden {
+  @include no-show;
+}
+.max-inner {
+  display: block;
+  margin: auto;
+  padding: 0 40px;
+  width: 100%;
+  max-width: $max-layout-width;
+  @extend .clearfix;
+}
+.clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+  *zoom: 1;
+}

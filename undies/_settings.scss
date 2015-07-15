@@ -1,0 +1,95 @@
+// ::::::::::::::::::::::::::::::::::::::::::
+// ::::::::::::::::::::::::::::::::::::::::::
+// ------------------------------------------
+// VARIABLES
+// ------------------------------------------
+// ::::::::::::::::::::::::::::::::::::::::::
+// ::::::::::::::::::::::::::::::::::::::::::
+
+// Layout
+// ---------------------------------------
+$max-layout-width:        1200px;
+
+
+// Colors
+// ---------------------------------------
+$primary-color:           #000;
+$secondary-color:         #8795A2;
+$highlight-color:         #f66;
+$background-color:        #fff;
+
+
+
+// Elements
+// ---------------------------------------
+$border-color:            #bbb;
+$border-width:            1px;
+$border-radius:           0;
+
+
+// Hyperlinks
+// ---------------------------------------
+$hyperlink-color:         #f66;
+
+
+// Buttons
+// ---------------------------------------
+$btn-bg-color:            #5B5D5F;
+$btn-bg-color-primary:    #53D3D8;
+$btn-bg-color-positive:   #5fcf80;
+$btn-bg-color-negative:   #f66;
+$btn-bg-color-neutral:    #5B5D5F;
+
+
+// TYPOGRAPHY
+// ---------------------------------------
+// ---------------------------------------
+
+// Define: Sans Serif Font families
+// ---------------------------------------
+$helvetica:              'Helvetica Neue', Helvetica, sans-serif;
+$lato:                   'Lato', sans-serif;
+
+// Define: Serif Font families
+// ---------------------------------------
+$lora:                   'Lora';
+$baskerville:            'Libre Baskerville', serif;
+
+// Define: Slab Serif font families
+// ---------------------------------------
+$adelle:                 'adelle', $lora, serif;
+
+// Define: Monospaced Font families
+// ---------------------------------------
+$pt-mono:                'PT Mono';
+
+
+// Define: Font Stacks
+// ---------------------------------------
+$sans-serif:             $helvetica;
+$serif:                  $lora, Georgia, 'Times New Roman', Times, serif;
+$monospace:              Courier, $pt-mono, Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
+
+
+// Define: Font Sizes
+// ---------------------------------------
+$font-size:              14px; //1em; // 16px
+$line-height:            1.6em; //$font-size * 1.5;
+$unitless-line-height:   $line-height / ($line-height * 0 + 1); // Strip units from line-height: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#Prefer_unitless_numbers_for_line-height_values
+$vertical-spacing:       0.5em;
+
+
+// Heading Font Sizes
+// ---------------------------------------
+$h1-font-size:           $font-size * 2.25;
+$h2-font-size:           $font-size * 1.5;
+$h3-font-size:           $font-size * 1.15;
+$h4-font-size:           $font-size * 1.05;
+$h5-font-size:           $font-size;
+$h6-font-size:           $font-size;
+
+
+// Form specific
+// ---------------------------------------
+$input-background: $background-color;
+$input-border: $border-color;

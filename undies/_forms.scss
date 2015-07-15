@@ -1,0 +1,95 @@
+// ::::::::::::::::::::::::::::::::::::::::::
+// ::::::::::::::::::::::::::::::::::::::::::
+// ------------------------------------------
+// FORMS, INPUTS & FORM ELEMENTS
+// ------------------------------------------
+// ::::::::::::::::::::::::::::::::::::::::::
+// ::::::::::::::::::::::::::::::::::::::::::
+
+$inputs-list: 'input[type="email"]',
+              'input[type="number"]',
+              'input[type="password"]',
+              'input[type="search"]',
+              'input[type="tel"]',
+              'input[type="text"]',
+              'input[type="url"]',
+
+              // Webkit & Gecko may change the display of these in the future
+              'input[type="color"]',
+              'input[type="date"]',
+              'input[type="datetime"]',
+              'input[type="datetime-local"]',
+              'input[type="month"]',
+              'input[type="time"]',
+              'input[type="week"]';
+
+$unquoted-inputs-list: ();
+@each $input-type in $inputs-list {
+  $unquoted-inputs-list: append($unquoted-inputs-list, unquote($input-type), comma);
+}
+
+$all-text-inputs: $unquoted-inputs-list;
+
+
+$all-text-inputs-focus: ();
+@each $input-type in $unquoted-inputs-list {
+      $input-type-focus: $input-type + ":focus";
+      $all-text-inputs-focus: append($all-text-inputs-focus, $input-type-focus, comma);
+}
+
+#{$all-text-inputs},
+textarea,
+select {
+  background: #fff;
+  color: $primary-color;
+  font-family: $sans-serif;
+  margin: 0 0 20px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  //outline: none;
+  width: 100%;
+  border-radius: 5px; 
+}
+select {
+  height: 40px;
+}
+button {
+  //outline: none;
+}
+textarea {
+  height: 81px;
+  padding: 10px;
+  resize: vertical;
+}
+label {
+  display: block;
+  line-height: 1.5;
+}
+input[type="checkbox"] + label, input[type="radio"] + label {
+  display: inline-block;
+  margin-left: 0.44444rem;
+  margin-right: 0.88889rem;
+  margin-bottom: 20px;
+  vertical-align: baseline;
+}
+input[type="file"], input[type="checkbox"], input[type="radio"], select {
+  margin: 0 0 20px 0;
+}
+
+// ------------------------------------------
+// Target the :focus pseudo-class
+// ------------------------------------------
+#{$all-text-inputs-focus},
+textarea:focus,
+select:focus {
+  border-color: darken($input-background, 50);
+  color: $secondary-color;
+}
+
+// ------------------------------------------
+// Form submit
+// ------------------------------------------
+input[type=submit], .submit {
+  @extend .btn;
+  //outline: none;
+}

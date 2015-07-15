@@ -1,0 +1,25 @@
+// Bare CSS 1.0
+// http://bare.nyaggah.com
+// Copyright 2015 Joe Nyaggah
+// MIT License
+
+// ::::::::::::::::::::::::::::::::::::::::::
+// ::::::::::::::::::::::::::::::::::::::::::
+// ------------------------------------------
+// CORE STYLES, BOILERPLATE, HELPERS ETC
+// ------------------------------------------
+// ::::::::::::::::::::::::::::::::::::::::::
+// ::::::::::::::::::::::::::::::::::::::::::
+
+// import settings first
+@import "settings";
+
+// import the rest
+@import "mixins";
+@import "boilerplate";
+@import "grid";
+@import "typography";
+@import "buttons";
+@import "forms";
+@import "brands";
+@import "helper-classes";

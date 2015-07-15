@@ -1,0 +1,123 @@
+// ::::::::::::::::::::::::::::::::::::::::::
+// ::::::::::::::::::::::::::::::::::::::::::
+// ------------------------------------------
+// BOILERPLATE styles
+// ------------------------------------------
+// ::::::::::::::::::::::::::::::::::::::::::
+// ::::::::::::::::::::::::::::::::::::::::::
+
+
+// ------------------------------------------
+// Boilerplate: Natural box-size ALL the elements! Rarrh!
+// ------------------------------------------ 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+// ------------------------------------------
+// Boilerplate: Structure and elements
+// ------------------------------------------
+html,
+button,
+input,
+select,
+textarea {
+  color: $primary-color;
+}
+html,
+body {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+// ------------------------------------------
+// Boilerplate: Text selection Boilerplate
+// ------------------------------------------
+::selection {
+  @include selection;
+}
+
+// ------------------------------------------
+// Boilerplate: thematic tags
+// ------------------------------------------
+hr {
+  border-bottom: 1px solid $border-color;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: $line-height 0;
+}
+
+// ------------------------------------------
+// Boilerplate: Media elements
+// ------------------------------------------
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+
+// ------------------------------------------
+// Boilerplate: Tables
+// ------------------------------------------
+table {
+  border-collapse: collapse;
+  margin: ($line-height / 2) 0;
+  table-layout: fixed;
+  width: 100%;
+}
+th {
+  border-bottom: $border-width solid lighten($border-color, 15%);
+  font-weight: bold;
+  padding: ($line-height / 2) 0;
+  text-align: left;
+}
+td {
+  border-bottom: $border-width solid lighten($border-color, 15%);
+  padding: ($line-height / 2) 0;
+}
+tr, td, th {
+  vertical-align: middle;
+}
+
+// ------------------------------------------
+// Boilerplate: Links
+// ------------------------------------------
+a {
+  color: $hyperlink-color;
+  // transition: all 0.25s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  &:link, 
+  &:visited  { 
+    border-bottom: 1px solid lighten($primary-color, 90%);
+    color: $hyperlink-color;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  &:hover, 
+  &:active { 
+    color: fade-out($hyperlink-color, .25); 
+    text-decoration: none;
+  }  
+  img {
+    border: 0;
+    transition: all,5s,ease-in-out;
+    &:hover {
+      border-color: fade-out($primary-color, .2); 
+    }
+  }
+}
+
+// ------------------------------------------
+// Boilerplate: Images
+// ------------------------------------------
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+b,
+bold {
+  font-weight: bold;
+}
