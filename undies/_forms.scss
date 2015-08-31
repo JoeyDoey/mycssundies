@@ -46,15 +46,11 @@ select {
   margin: 0 0 20px 0;
   padding: 10px;
   border: 1px solid #ccc;
-  //outline: none;
   width: 100%;
   border-radius: 5px; 
 }
 select {
   height: 40px;
-}
-button {
-  //outline: none;
 }
 textarea {
   height: 81px;
@@ -91,5 +87,4 @@ select:focus {
 // ------------------------------------------
 input[type=submit], .submit {
   @extend .btn;
-  //outline: none;
 }

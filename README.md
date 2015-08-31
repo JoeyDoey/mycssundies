@@ -2,7 +2,7 @@
 
 myCSSundies are a minimal collection of CSS classes and utilities that speed up prototyping and building-out of  responsive websites. 
 
-Keep in mind that these are _my_ undies. You likely have a pair of your own (god, i hope you do!) but in case you don't&mdash;maybe it's laundry day&mdash;these will get you up and running in no time.
+Keep in mind that these are _my_ undies. You likely have a pair of your own (God, I hope you do!) but in case you don't&mdash;maybe it's laundry day&mdash;these will get you up and running in no time.
 
 
 ## What's in it?
@@ -11,7 +11,7 @@ Keep in mind that these are _my_ undies. You likely have a pair of your own (god
 undies/
 ├── _undies.scss
 ├── _boilerplate.scss
-├── _brand.scss
+├── _brands.scss
 ├── _buttons.scss
 ├── _forms.scss
 ├── _grid.scss
@@ -23,9 +23,9 @@ undies/
 
 ## Assumptions
 
-myCSSundies are a collection of prefix-free classes, mixins, helpers, etc so the assumption is that a post-css solution like [Autoprefixer](https://github.com/postcss/autoprefixer) is in use. 
+myCSSundies are a collection of prefix-free classes, mixins, helpers, etc so the assumption is that a post-css solution like [Autoprefixer](https://github.com/postcss/autoprefixer) is in use (to handle vendor prefixes where/if necessary). 
 
-There's the assumption that there's style-normalization (hopefully not total CSS reset) somewhere in the mix already.
+There's the assumption that there's style-normalization (hopefully not total CSS reset) somewhere in the mix already via something like [Normalize](https://github.com/necolas/normalize.css/).
 
 
 ## How to use

@@ -86,7 +86,6 @@ tr, td, th {
 // ------------------------------------------
 a {
   color: $hyperlink-color;
-  // transition: all 0.25s cubic-bezier(0.6, 0.04, 0.98, 0.335);
   &:link, 
   &:visited  { 
     border-bottom: 1px solid lighten($primary-color, 90%);
