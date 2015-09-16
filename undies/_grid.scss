@@ -8,6 +8,7 @@
 
 $gutter-width: 20px;
 $col-width: 100%;
+$medium-breakpoint: 768px;
 .row {
   display: block;
   margin-right: -$gutter-width;
@@ -31,5 +32,16 @@ $col-width: 100%;
       float: none;
       margin: auto;
     }
+    @media (max-width: $medium-breakpoint) {
+      @for $i from 1 through 12 {     
+        &.col-#{$i} {
+          float: none; 
+          width: 100%;
+        }
+      }   
+      &.col-centered {
+        width: 100%;
+      }
+    }    
   }
 }
