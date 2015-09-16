@@ -35,7 +35,7 @@
   max-width: $max-layout-width;
   @extend .clearfix;
 }
-.clearfix {
+%clearfix {
   &:before,
   &:after {
     content: " ";

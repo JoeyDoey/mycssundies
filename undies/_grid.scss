@@ -15,7 +15,7 @@ $medium-breakpoint: 768px;
   margin-left: -$gutter-width;
   padding: 0;
   position: relative;
-  @extend .clearfix;
+  @extend %clearfix;
   .column {
     float: left;
     width: 100%;
